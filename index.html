@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.js"></script>
+	<script src="main.js"></script>
+	<script id ="first-template" type="text/x-handlebars-template">
+		<li data-id"{{user.id}}"> {{user.name}} <a href="#">Get Permissions</a></li>
+	</script>
+	<script id="second-template" type="text/x-handlebars-template">
+		<li>{{permissions}}</li>
+	</script>
+</head>
+<body>
+
+	<button>Get Users</button>
+
+	<ul class="info"></ul>
+	<div class="permissions"></div>
+	
+</body>
+</html>
